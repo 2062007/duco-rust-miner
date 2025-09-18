@@ -1,0 +1,15 @@
+[package]
+name = "duco_rust_miner"
+version = "0.1.0"
+edition = "2025"
+
+[dependencies]
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+sha1 = "0.10"
+hex = "0.4"
+rand = "0.8"
+reqwest = { version = "0.11", features = ["json", "blocking", "rustls-tls"] }
+tokio = { version = "1.36", features = ["full"] }
